@@ -1,9 +1,9 @@
-console.log('js cargado');
+
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
-const width = canvas.width = window.innerwidth;
-const height = canvas.height = window.innerheight;
+const width = canvas.width = window.innerWidth; // Pongo el Width con mayúsculas
+const height = canvas.height = window.innerHeight; // Pongo el Height con mayúsculas
 
 function random(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -26,7 +26,7 @@ class Ball {
     draw() {
         ctx.beginPath();
         ctx.fillStyle = this.color;
-        ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI());
+        ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI); /* Me salta un error, es porque el Math.PI no tiene () después */
         ctx.fill();
     }
 
@@ -70,7 +70,7 @@ while (balls.length < 56) {
 }
 
 function loop() {
-    ctx.fillStyle = 'rgba(0, 245, 0, 0.25)';
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.25)'; //El fondo se ve verde y es debido a esto, lo cambio a 0,0,0 que es negro
     ctx.fillRect(0, 0, width, height);
 
     for (const ball of balls) {
