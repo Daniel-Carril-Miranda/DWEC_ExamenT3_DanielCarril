@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /* Pongo esto para que se ajuste justo al borde de la pantalla */
+body{
+    text-align: center;
+    overflow: hidden; /* Esto nos lo ajusta al al margen de la pantalla para que no aparezcan los sliders */
+}
+h2{
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(255, 66, 66) 4px 4px 5px;
+}
