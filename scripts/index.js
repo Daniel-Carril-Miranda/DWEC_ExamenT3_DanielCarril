@@ -1,3 +1,6 @@
+//Author: Daniel Carril Miranda (Student 2ºDAW)
+//GitHub: https://github.com/Daniel-Carril-Miranda/DWEC_ExamenT3_DanielCarril.git
+
 console.log('js cargado');
 // Importo
 import { width } from "./canvas.js";
